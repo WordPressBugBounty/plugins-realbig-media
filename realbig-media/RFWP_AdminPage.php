@@ -169,9 +169,7 @@ if (!class_exists('RFWP_AdminPage')) {
 
             global $wpPrefix;
 
-            if (!empty($_POST) && wp_get_raw_referer() && !wp_get_referer() &&
-                    preg_replace('~^https?://~', '//', home_url() . wp_unslash( $_SERVER['REQUEST_URI'] )) ===
-                        preg_replace('~^https?://~', '//', wp_get_raw_referer())) {
+            if (!empty($_POST) && wp_get_raw_referer()) {
                 if (!empty($_POST['clearLogs'])) {
                     RFWP_Logs::clearAllLogs();
                 }
