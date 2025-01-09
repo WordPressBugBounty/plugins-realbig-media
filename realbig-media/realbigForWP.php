@@ -702,7 +702,7 @@ try {
 	    $statusGatherer             = RFWP_statusGathererConstructor(true);
     }
 	/***************** updater code ***************************************************************************************/
-	
+
 	/****************** end of updater code *******************************************************************************/
 	/********** checking and creating tables ******************************************************************************/
 	if ((!empty($lastSuccessVersionGatherer)&&$lastSuccessVersionGatherer != $GLOBALS['realbigForWP_version'])||empty($lastSuccessVersionGatherer)) {
